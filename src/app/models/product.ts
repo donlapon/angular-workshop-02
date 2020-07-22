@@ -1,5 +1,5 @@
 export class Product {
-  
+
     constructor(
         public code: string,
         public name: string,
@@ -8,4 +8,4 @@ export class Product {
         public available: boolean,
         public imageUrl: string
         ) {}
-  }
+}
