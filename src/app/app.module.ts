@@ -11,6 +11,7 @@ import { ProductNamePipe } from './product-name.pipe';
 import { ProductPipe } from './product.pipe';
 import { from } from 'rxjs';
 import { RatingComponent } from './rating/rating.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RatingComponent } from './rating/rating.component';
     ProductListComponent,
     ProductNamePipe,
     ProductPipe,
-    RatingComponent
+    RatingComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
