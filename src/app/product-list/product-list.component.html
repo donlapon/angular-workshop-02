@@ -6,6 +6,9 @@
       <div class='row'>
         <div class='col-md-2'>Filter by:</div>
         <div class='col-md-4'>
+          <div class='col-md-4'>
+            <input type="text" [(ngModel)]="filterData" />
+          </div>
           <select>
             <option>Choosing</option>
             <option>TODO</option>
@@ -15,7 +18,7 @@
       </div>
       <div class='row'>
         <div class='col-md-6'>
-          Filtered by ...
+          Filtered by {{ filterData }}
         </div>
       </div>
       <div class='table-responsive'>
@@ -35,7 +38,7 @@
           </tr>
           </thead>
           <tbody *ngIf="products.length > 0">
-            <tr *ngFor="let product of products">
+            <tr *ngFor="let product of products | product: filterData">
               <th>
                 {{ product.imageUrl }}
               </th>
