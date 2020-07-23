@@ -1,0 +1,8 @@
+
+version: '3.3'
+services:
+  angular-docker:
+    container_name: 'product-app'
+    build: '.'
+    ports:
+      - 9999:80
